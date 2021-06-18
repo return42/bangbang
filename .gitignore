@@ -1,0 +1,10 @@
+*.pyc
+*/*.pyc
+*~
+*.swp
+
+build/
+dist/
+local/
+gh-pages/
+*.egg-info/

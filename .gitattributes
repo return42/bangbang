@@ -1,0 +1,2 @@
+utils/* linguist-vendored
+.dir-locals.el linguist-vendored
