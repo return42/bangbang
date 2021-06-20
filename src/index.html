@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Source-Code &#8212; BangBang</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/project.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Admin’s tooling box" href="../utils/index.html" />
+    <link rel="prev" title="Welcome to this Project" href="../index.html" />
+   
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../utils/index.html" title="Admin’s tooling box"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Welcome to this Project"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">BangBang</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Source-Code</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="source-code">
+<h1>Source-Code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h1>
+<p>This is a partial documentation of our source code.  We are not aim to document
+every item from the source code, but we will add documentation when requested.</p>
+<div class="section" id="module-bangbang.__pkginfo__">
+<span id="pkginfo"></span><h2><code class="docutils literal notranslate"><span class="pre">__pkginfo__</span></code><a class="headerlink" href="#module-bangbang.__pkginfo__" title="Permalink to this headline">¶</a></h2>
+<p>Python package meta information used by setup.py and other project files.</p>
+<p>Single point of source for all package metadata.  After modifying this file it
+is needed to recreate some project files (<code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">prj.update</span></code>):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;from __pkginfo__ import *; print(README)&quot;</span> <span class="o">&gt;</span> <span class="n">README</span><span class="o">.</span><span class="n">rst</span>
+<span class="n">python</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;from __pkginfo__ import *; print(requirements_txt)&quot;</span> <span class="o">&gt;</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>About python packaging see <a class="reference external" href="https://www.pypa.io">Python Packaging Authority</a>.  Most of the names
+here are mapped to <code class="docutils literal notranslate"><span class="pre">setup(&lt;name1&gt;=...,</span> <span class="pre">&lt;name2&gt;=...)</span></code> arguments in
+<code class="docutils literal notranslate"><span class="pre">setup.py</span></code>.  See <a class="reference external" href="https://packaging.python.org/guides/distributing-packages-using-setuptools/">Packaging and distributing projects</a> about <code class="docutils literal notranslate"><span class="pre">setup(...)</span></code>
+arguments.  If this is all new for you, start with <a class="reference external" href="https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/">PyPI Quick and Dirty</a>.</p>
+<p>Further read:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://pythonwheels.com/">pythonwheels</a></p></li>
+<li><p><a class="reference external" href="https://setuptools.readthedocs.io/en/latest/setuptools.html">setuptools</a></p></li>
+<li><p><a class="reference external" href="https://packaging.python.org/guides/distributing-packages-using-setuptools/#packaging-and-distributing-projects">packaging</a></p></li>
+<li><p><a class="reference external" href="https://packaging.python.org/guides/distributing-packages-using-setuptools/#source-distributions">sdist</a></p></li>
+<li><p><a class="reference external" href="https://packaging.python.org/tutorials/installing-packages/">installing</a></p></li>
+</ul>
+<dl class="py function">
+<dt class="sig sig-object py" id="bangbang.__pkginfo__.get_entry_points">
+<span class="sig-prename descclassname"><span class="pre">bangbang.__pkginfo__.</span></span><span class="sig-name descname"><span class="pre">get_entry_points</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bangbang/__pkginfo__.html#get_entry_points"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bangbang.__pkginfo__.get_entry_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>get entry points of the python package</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+  
+
+  <h3>Project Links</h3>
+  <ul>
+    <li><a href="https://github.com/return42/bangbang">Source</a>
+  
+    <li><a href="https://github.com/return42/bangbang/wiki">Wiki</a>
+  
+    <li><a href="https://github.com/return42/bangbang/issues">Issue Tracker</a>
+  </ul><h3>Navigation</h3>
+<ul>
+  <li><a href="../index.html">Overview</a>
+    <ul>
+          <li>Previous: <a href="../index.html" title="previous chapter">Welcome to this Project</a>
+          <li>Next: <a href="../utils/index.html" title="next chapter">Admin’s tooling box</a>
+    </ul>
+  </li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021 Markus Heiser.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.0.2.
+    </div>
+  <script src="../_static/version_warning_offset.js"></script>
+
+  </body>
+</html>

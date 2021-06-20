@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bangbang.__pkginfo__ &#8212; BangBang</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/project.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/tabs.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/tabs.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">BangBang</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">bangbang.__pkginfo__</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for bangbang.__pkginfo__</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Python package meta information used by setup.py and other project files.</span>
+
+<span class="sd">Single point of source for all package metadata.  After modifying this file it</span>
+<span class="sd">is needed to recreate some project files (``make prj.update``)::</span>
+
+<span class="sd">  python -c &quot;from __pkginfo__ import *; print(README)&quot; &gt; README.rst</span>
+<span class="sd">  python -c &quot;from __pkginfo__ import *; print(requirements_txt)&quot; &gt; requirements.txt</span>
+
+<span class="sd">About python packaging see `Python Packaging Authority`_.  Most of the names</span>
+<span class="sd">here are mapped to ``setup(&lt;name1&gt;=..., &lt;name2&gt;=...)`` arguments in</span>
+<span class="sd">``setup.py``.  See `Packaging and distributing projects`_ about ``setup(...)``</span>
+<span class="sd">arguments.  If this is all new for you, start with `PyPI Quick and Dirty`_.</span>
+
+<span class="sd">Further read:</span>
+
+<span class="sd">- pythonwheels_</span>
+<span class="sd">- setuptools_</span>
+<span class="sd">- packaging_</span>
+<span class="sd">- sdist_</span>
+<span class="sd">- installing_</span>
+
+<span class="sd">.. _`Python Packaging Authority`:</span>
+<span class="sd">   https://www.pypa.io</span>
+<span class="sd">.. _`Packaging and distributing projects`:</span>
+<span class="sd">    https://packaging.python.org/guides/distributing-packages-using-setuptools/</span>
+<span class="sd">.. _`PyPI Quick and Dirty`:</span>
+<span class="sd">   https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/</span>
+<span class="sd">.. _pythonwheels:</span>
+<span class="sd">   https://pythonwheels.com/</span>
+<span class="sd">.. _setuptools:</span>
+<span class="sd">   https://setuptools.readthedocs.io/en/latest/setuptools.html</span>
+<span class="sd">.. _packaging:</span>
+<span class="sd">   https://packaging.python.org/guides/distributing-packages-using-setuptools/#packaging-and-distributing-projects</span>
+<span class="sd">.. _sdist:</span>
+<span class="sd">    https://packaging.python.org/guides/distributing-packages-using-setuptools/#source-distributions</span>
+<span class="sd">.. _bdist_wheel:</span>
+<span class="sd">   https://packaging.python.org/guides/distributing-packages-using-setuptools/#pure-python-wheels</span>
+<span class="sd">.. _installing:</span>
+<span class="sd">   https://packaging.python.org/tutorials/installing-packages/</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c1"># pylint: enable=line-too-long</span>
+
+<span class="kn">from</span> <span class="nn">setuptools</span> <span class="kn">import</span> <span class="n">find_packages</span>
+
+<span class="n">org</span> <span class="o">=</span> <span class="s1">&#39;return42&#39;</span>
+<span class="n">project</span> <span class="o">=</span> <span class="s1">&#39;BangBang (!!)&#39;</span>
+<span class="n">package</span> <span class="o">=</span> <span class="s1">&#39;bangbang&#39;</span>
+<span class="n">version</span> <span class="o">=</span> <span class="s1">&#39;20210101&#39;</span>
+
+<span class="n">copyright</span> <span class="o">=</span> <span class="s1">&#39;2021 Markus Heiser&#39;</span>  <span class="c1"># pylint: disable=redefined-builtin</span>
+<span class="n">license</span> <span class="o">=</span> <span class="s1">&#39;AGPL-3.0-or-later&#39;</span>     <span class="c1"># pylint: disable=redefined-builtin</span>
+
+<span class="n">cls_lic</span> <span class="o">=</span> <span class="s2">&quot;License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)&quot;</span>
+<span class="n">description</span> <span class="o">=</span> <span class="s1">&#39;Bangs from duckduckgo and more.&#39;</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://github.com/</span><span class="si">%s</span><span class="s1">/</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">org</span><span class="p">,</span> <span class="n">package</span><span class="p">)</span>
+<span class="n">docs</span> <span class="o">=</span> <span class="s1">&#39;https://</span><span class="si">%s</span><span class="s1">.github.io/</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">org</span><span class="p">,</span> <span class="n">package</span><span class="p">)</span>
+<span class="n">issues</span> <span class="o">=</span> <span class="n">url</span> <span class="o">+</span> <span class="s1">&#39;/issues&#39;</span>
+
+<span class="n">author</span> <span class="o">=</span> <span class="s1">&#39;Markus Heiser&#39;</span>
+<span class="n">author_email</span> <span class="o">=</span> <span class="s1">&#39;markus.heiser@darmarit.de&#39;</span>
+<span class="n">maintainer</span> <span class="o">=</span> <span class="s1">&#39;Markus Heiser&#39;</span>
+<span class="n">maintainer_email</span> <span class="o">=</span> <span class="s1">&#39;markus.heiser@darmarit.de&#39;</span>
+
+<span class="n">authors</span>      <span class="o">=</span> <span class="p">[</span><span class="n">author</span><span class="p">,</span> <span class="p">]</span>
+<span class="n">emails</span>       <span class="o">=</span> <span class="p">[</span><span class="n">author_email</span><span class="p">,</span> <span class="p">]</span>
+<span class="n">keywords</span>     <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+<span class="n">maintainers</span> <span class="o">=</span> <span class="p">[</span><span class="n">maintainer</span><span class="p">,</span> <span class="p">]</span>
+
+<span class="n">project_urls</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Documentation&#39;</span> <span class="p">:</span> <span class="n">docs</span><span class="p">,</span>
+    <span class="s1">&#39;Code&#39;</span> <span class="p">:</span> <span class="n">url</span><span class="p">,</span>
+    <span class="s1">&#39;Issue tracker&#39;</span> <span class="p">:</span> <span class="n">issues</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="c1"># When your source code is in a subdirectory under the project root, e.g.</span>
+<span class="c1"># `src/`, it is necessary to specify the `package_dir` argument.</span>
+<span class="c1"># https://docs.python.org/3/distutils/setupscript.html#listing-whole-packages</span>
+<span class="n">package_dir</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;&#39;</span><span class="p">:</span> <span class="s1">&#39;src&#39;</span><span class="p">}</span>
+
+<span class="n">packages</span> <span class="o">=</span> <span class="n">find_packages</span><span class="p">(</span><span class="n">where</span><span class="o">=</span><span class="s2">&quot;src&quot;</span><span class="p">,</span> <span class="n">exclude</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;docs&#39;</span><span class="p">,</span> <span class="s1">&#39;tests&#39;</span><span class="p">])</span>
+
+<span class="c1"># https://packaging.python.org/guides/distributing-packages-using-setuptools/#py-modules</span>
+<span class="n">py_modules</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># If there are data files included in your packages that need to be</span>
+<span class="c1"># installed, specify them here.</span>
+<span class="c1"># https://packaging.python.org/guides/distributing-packages-using-setuptools/#package-data</span>
+<span class="c1"># https://setuptools.readthedocs.io/en/latest/userguide/datafiles.html</span>
+<span class="n">package_data</span> <span class="o">=</span> <span class="p">{</span>
+<span class="c1">#     &#39;xxxx&#39; : [</span>
+<span class="c1">#         &#39;config.ini&#39;,</span>
+<span class="c1">#         &#39;log.ini&#39;,</span>
+<span class="c1">#         &#39;mime.types&#39;,</span>
+<span class="c1">#     ]</span>
+<span class="p">}</span>
+
+<span class="c1"># Although &#39;package_data&#39; is the preferred approach, in some case you may</span>
+<span class="c1"># need to place data files outside of your packages. See:</span>
+<span class="c1"># https://docs.python.org/distutils/setupscript.html#installing-additional-files</span>
+<span class="c1"># https://packaging.python.org/guides/distributing-packages-using-setuptools/#data-files</span>
+<span class="c1"># https://www.scivision.dev/newer-setuptools-needed/</span>
+<span class="c1"># https://setuptools.readthedocs.io/en/latest/history.html#v40-5-0</span>
+<span class="n">data_files</span> <span class="o">=</span> <span class="p">[</span>
+<span class="c1">#     (&#39;/etc/xxxx&#39;, [</span>
+<span class="c1">#         &#39;xxxx/config.ini&#39;,</span>
+<span class="c1">#         &#39;xxxx/log.ini&#39;,</span>
+<span class="c1">#     ])</span>
+<span class="c1">#     , (&#39;/usr/share/doc/xxxx&#39;, [</span>
+<span class="c1">#         &#39;README.rst&#39;,</span>
+<span class="c1">#         &#39;LICENSE.txt&#39;,</span>
+<span class="c1">#     ])</span>
+<span class="p">]</span>
+
+<span class="c1"># https://packaging.python.org/guides/distributing-packages-using-setuptools/#python-requires</span>
+<span class="n">python_requires</span>  <span class="o">=</span><span class="s1">&#39;&gt;=3.7&#39;</span>
+
+<span class="c1"># [git+] https://pip.pypa.io/en/stable/reference/pip_install/#vcs-support</span>
+<span class="c1"># [requirements.txt] https://pip.pypa.io/en/stable/user_guide/#requirements-files</span>
+<span class="c1"># [dependency_links] https://python-packaging.readthedocs.io/en/latest/dependencies.html</span>
+
+<span class="n">install_requires</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;fspath&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="n">install_requires_txt</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">install_requires</span><span class="p">)</span>
+
+<span class="c1"># usage: pip install .[test, develop]</span>
+<span class="c1">#</span>
+<span class="c1"># The setup.py &#39;extra_require&#39; specifies optional parts of a distribution</span>
+<span class="c1"># [PEP-508 extras], here in the example &#39;devel&#39; and &#39;test&#39; requirements also</span>
+<span class="c1"># installed.</span>
+<span class="c1">#</span>
+<span class="c1"># [PEP-508 URL]      https://www.python.org/dev/peps/pep-0508/</span>
+<span class="c1"># [PEP-508 extras]   https://www.python.org/dev/peps/pep-0508/#extras</span>
+
+<span class="n">test_requires</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;pylint&#39;</span>
+    <span class="p">]</span>
+
+<span class="n">develop_requires</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;twine&#39;</span><span class="p">,</span>
+    <span class="c1"># &#39;wheel&#39;</span>
+    <span class="s1">&#39;Sphinx&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;pallets-sphinx-themes&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx-autobuild&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx-issues&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx-jinja&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx-tabs&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinxcontrib-programoutput&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;linuxdoc&#39;</span><span class="p">,</span>
+    <span class="c1"># slide-shows with revaljs</span>
+    <span class="c1"># &#39;sphinxjp.themes.revealjs @ git+https://github.com/return42/sphinxjp.themes.revealjs&#39;,</span>
+    <span class="c1"># https://jedi.readthedocs.io/</span>
+    <span class="c1"># &#39;jedi&#39;,</span>
+    <span class="p">]</span>
+
+<div class="viewcode-block" id="get_entry_points"><a class="viewcode-back" href="../../src/index.html#bangbang.__pkginfo__.get_entry_points">[docs]</a><span class="k">def</span> <span class="nf">get_entry_points</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;get entry points of the python package&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="c1"># &#39;console_scripts&#39;: [</span>
+        <span class="c1">#     &#39;xxxx = xxxx.cli:main&#39; # Main xxxx_ console script</span>
+        <span class="c1"># ]</span>
+    <span class="p">}</span></div>
+
+<span class="c1"># See https://pypi.python.org/pypi?%3Aaction=list_classifiers</span>
+<span class="n">classifiers</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;Development Status :: 5 - Production/Stable&quot;</span><span class="p">,</span>
+    <span class="c1"># &quot;Intended Audience :: Developers&quot;,</span>
+    <span class="n">cls_lic</span><span class="p">,</span>
+    <span class="s2">&quot;Operating System :: OS Independent&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Programming Language :: Python&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Programming Language :: Python :: 3&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Programming Language :: Python :: Implementation :: CPython&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Programming Language :: Python :: Implementation :: PyPy&quot;</span><span class="p">,</span>
+    <span class="c1"># &quot;Topic :: Software Development :: Libraries :: Application Frameworks&quot;,</span>
+    <span class="c1"># &quot;Topic :: Software Development :: Libraries :: Python Modules&quot;,</span>
+<span class="p">]</span>
+
+<span class="n">long_description</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+
+<span class="s2">:package:     </span><span class="si">%(package)s</span><span class="s2"> v</span><span class="si">%(version)s</span><span class="s2"></span>
+<span class="s2">:copyright:   </span><span class="si">%(copyright)s</span><span class="s2"></span>
+<span class="s2">:license:     </span><span class="si">%(license)s</span><span class="s2"></span>
+<span class="s2">:docs:        </span><span class="si">%(docs)s</span><span class="s2"></span>
+<span class="s2">:repository:  </span><span class="si">%(url)s</span><span class="s2"></span>
+
+<span class="s2">Install</span>
+<span class="s2">=======</span>
+
+<span class="s2">Install and update using `pip &lt;https://pip.pypa.io/en/stable/quickstart/&gt;`__::</span>
+
+<span class="s2">  pip install </span><span class="si">%(package)s</span><span class="s2"></span>
+
+<span class="s2">or a bleeding edge installation from the repository::</span>
+
+<span class="s2">  pip install </span><span class="si">%(url)s</span><span class="s2"></span>
+<span class="s2">&quot;&quot;&quot;</span> <span class="o">%</span> <span class="nb">globals</span><span class="p">()</span>
+
+<span class="n">README</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span><span class="se">\</span>
+<span class="s2">.. SPDX-License-Identifier: </span><span class="si">%(license)s</span><span class="s2"></span>
+<span class="s2">.. do not edit this file, the origin is in __pkginfo__.py</span>
+
+<span class="s2">==============================================================================</span>
+<span class="si">%(project)s</span><span class="s2"></span>
+<span class="s2">==============================================================================</span>
+
+<span class="si">%(description)s</span><span class="s2"></span>
+
+<span class="s2">|homepage| |Issues| |commits|</span>
+
+<span class="s2">-----</span>
+
+<span class="si">%(long_description)s</span><span class="s2"></span>
+
+<span class="s2">.. |homepage| image:: https://img.shields.io/badge/-homepage-blue</span>
+<span class="s2">   :target: </span><span class="si">%(docs)s</span><span class="s2"></span>
+
+<span class="s2">.. |Issues| image:: https://img.shields.io/github/issues/</span><span class="si">%(org)s</span><span class="s2">/</span><span class="si">%(package)s</span><span class="s2">?color=yellow&amp;label=issues</span>
+<span class="s2">   :target: https://github.com/</span><span class="si">%(org)s</span><span class="s2">/</span><span class="si">%(package)s</span><span class="s2">/issues</span>
+
+<span class="s2">.. |PR| image:: https://img.shields.io/github/issues-pr-raw/</span><span class="si">%(org)s</span><span class="s2">/</span><span class="si">%(package)s</span><span class="s2">?color=yellow&amp;label=PR</span>
+<span class="s2">   :target: https://github.com/</span><span class="si">%(org)s</span><span class="s2">/</span><span class="si">%(package)s</span><span class="s2">/pulls</span>
+
+<span class="s2">.. |commits| image:: https://img.shields.io/github/commit-activity/y/</span><span class="si">%(org)s</span><span class="s2">/</span><span class="si">%(package)s</span><span class="s2">?color=yellow&amp;label=commits</span>
+<span class="s2">   :target: https://github.com/</span><span class="si">%(org)s</span><span class="s2">/</span><span class="si">%(package)s</span><span class="s2">/commits/master</span>
+
+<span class="s2">&quot;&quot;&quot;</span> <span class="o">%</span> <span class="nb">globals</span><span class="p">()</span>
+
+<span class="n">test_requires_txt</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">test_requires</span><span class="p">)</span>
+<span class="n">develop_requires_txt</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">develop_requires</span><span class="p">)</span>
+
+<span class="n">requirements_txt</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span><span class="se">\</span>
+<span class="s2"># -*- coding: utf-8; mode: conf -*-</span>
+<span class="s2"># do not edit this file, the origin is in __pkginfo__.py</span>
+
+<span class="s2"># requirements of package </span><span class="si">%(package)s</span><span class="s2"></span>
+<span class="si">%(install_requires_txt)s</span><span class="s2"></span>
+
+<span class="s2"># test requires</span>
+<span class="si">%(test_requires_txt)s</span><span class="s2"></span>
+
+<span class="s2"># development requires</span>
+<span class="si">%(develop_requires_txt)s</span><span class="s2"></span>
+<span class="s2">&quot;&quot;&quot;</span> <span class="o">%</span> <span class="nb">globals</span><span class="p">()</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+  
+
+  <h3>Project Links</h3>
+  <ul>
+    <li><a href="https://github.com/return42/bangbang">Source</a>
+  
+    <li><a href="https://github.com/return42/bangbang/wiki">Wiki</a>
+  
+    <li><a href="https://github.com/return42/bangbang/issues">Issue Tracker</a>
+  </ul><h3>Navigation</h3>
+<ul>
+  <li><a href="../../index.html">Overview</a>
+    <ul>
+      <li><a href="../index.html">Module code</a>
+        
+          
+          </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021 Markus Heiser.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.0.2.
+    </div>
+  <script src="../../_static/version_warning_offset.js"></script>
+
+  </body>
+</html>
